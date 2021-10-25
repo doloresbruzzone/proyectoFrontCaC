@@ -1,0 +1,124 @@
+/* .contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 10px;
+    }
+ */
+
+    .contenedor {
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        display: grid;
+        grid-gap: 28px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+    
+        grid-template-areas: "header header header header"
+                             "content content content content"
+                             "libro-1 libro-2 libro-3 libro-4"
+                             "libro-5 libro-6 libro-7 libro-8"
+                             "libro-9 libro-10 libro-11 libro-12"
+                             "footer footer footer footer";
+    }
+    
+    .contenedor > div,
+    .contenedor .header, 
+    .contenedor .content,
+    .contenedor .footer {
+        background-color: whitesmoke;
+        padding: 20px;
+        border-radius: 6px;
+    }
+    
+    .contenedor .header {
+        background: rgb(233, 204, 204);
+        color: black;
+        grid-area: header;
+    }
+    
+    .contenedor .content {
+        background: rgba(79, 24, 100, 0.705);
+        grid-area: content;
+    }
+    
+    .contenedor .libro-1, .contenedor .libro-2 , .contenedor .libro-3, 
+    .contenedor .libro-4, .contenedor .libro-5, .contenedor .libro-6, 
+    .contenedor .libro-7, .contenedor .libro-8, .contenedor .libro-9, 
+    .contenedor .libro-10, .contenedor .libro-11, .contenedor .libro-12
+    {
+        background:rgba(202, 67, 255, 0.486);
+        height: 200px;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contenedor .libro-1 {
+        background-image: url(../img/starfish.jpg);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-area: libro-1;
+    }
+    .contenedor .libro-2 {
+        grid-area: libro-2;
+    }
+    .contenedor .libro-3 {
+        grid-area: libro-3;
+    }
+    .contenedor .libro-4 {
+        grid-area: libro-4;
+    }
+    .contenedor .libro-5 {
+        grid-area: libro-5;
+    }
+    .contenedor .libro-6 {
+        grid-area: libro-6;
+    }
+    .contenedor .libro-7 {
+        grid-area: libro-7;
+    }
+    .contenedor .libro-8 {
+        grid-area: libro-8;
+    }
+    .contenedor .libro-9 {
+        grid-area: libro-9;
+    }
+    .contenedor .libro-10 {
+        grid-area: libro-10;
+    }
+    .contenedor .libro-11 {
+        grid-area: libro-11;
+    }
+    .contenedor .libro-12 {
+        grid-area: libro-12;
+    }
+    
+    .contenedor .footer {
+        background:  rgba(23, 27, 37, 0.603);
+        grid-area: footer;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .contenedor {
+            grid-template-areas: 
+            "header header header header"
+            "content content content content"
+            "libro-1 libro-1 libro-2 libro-2" 
+            "libro-3 libro-3 libro-4 libro-4"
+            "libro-5 libro-5 libro-6 libro-6" 
+            "libro-7 libro-7 libro-8 libro-8"
+            "libro-9 libro-9 libro-10 libro-10" 
+            "libro-11 libro-11 libro-12 libro-12"
+            "footer footer footer footer";
+        }
+    }
+    
+    
+    
+    

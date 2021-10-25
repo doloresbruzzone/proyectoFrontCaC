@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #a22851;
+    position:sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-logo img{
+    width: 14%;
+}
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+   display: inline-block;
+   padding: 5px 20px;
+}
+
+.nav-links li a{
+    color:#FFF;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.nav-links li a:hover{
+    color:#ffb769;
+    font-weight: 800;
+}
+
+.container{
+    position:relative;
+    width: 100%;
+}
+
+#home{
+    display: block;
+    padding: 0px 100px;
+    /* max-width: 1080px; */
+    margin:auto;
+    background-color: #a22851;
+    height: 700px;
+}
+
+#home .col{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#home p{
+    margin-top: 100px;
+    font-size: 1.5rem;
+    color: #FFF;
+    text-align: left;
+
+}
+
+#home h1{
+    font-size: 4.5rem;
+    color: #ffa2a4;
+    font-family: 'Varela Round', sans-serif;
+    text-align: left;
+}
+.img-home{
+    width: 80%;
+}
+
+#about-us{
+    display: block;
+}
+
+.wave{
+    margin-top:-340px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#about-us{
+    background-color: #FFF;
+}
+
+#about-us p{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding: 30px 0px;
+    font-size: 20px;
+}
+
+#service{
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+}
+
+#service .col{
+    float: left;
+    width: 33.333333333%;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 40px 0px;
+}
+
+#service h3{
+    font-size: 30px;
+    margin: 20px 0px;
+}
+
+.service-icon{
+    color: #d487ce;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/bg-code.jpg");
+    /* Set a specific height */
+    min-height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: both;
+}
+
+
+
+#contact{
+    background-color: #FFF;
+}
+
+#contact .col{
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.input{
+    border: 2px solid #ffb769;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.btn{
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #EB9B3F;
+    color: #FFF;
+    border-color: #f59a07;
+}
+
+
+
+footer{
+    height: 40px; 
+    padding:60px 0px;
+    background: #111111;
+    text-align: center;
+    color: #fff;
+    clear: both;
+}
