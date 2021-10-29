@@ -9,19 +9,19 @@ form.addEventListener('submit', function(e){
 
     var mensajesError = [];
     if(inputNombre === null || inputNombre.value.length == 0){
-        mensajesError.push('Ingrese su nombre');
+        mensajesError.push('ingrese su nombre');
     }
     if(inputAsunto === null || inputAsunto.value.length == 0){
-        mensajesError.push('Ingrese un asunto');
+        mensajesError.push('ingrese un asunto');
     }
 
     var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     var valido=expReg.test(inputEmail);
     
     if(valido==false || inputEmail === null || inputEmail.value.length == 0){
-        mensajesError.push('El email ingresado no es valido');
+        mensajesError.push('el email ingresado no es valido');
     }
 
-    error.style.color = '#ff5b48';
+    
     error.innerHTML = mensajesError.join(', ');
 });
