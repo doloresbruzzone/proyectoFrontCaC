@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact us 💌</title>
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="nav-logo">
+           <img src="./img/logoRedondo.png" alt="logo"> 
+        </div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades literarias</a></li>
+                <li><a href="top-librerias.html">Top librerias</a></li>
+                <li><a href="contact-us.html">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2 class="section-title">Queremos crecer junto a ustedes!</h2>
+            <p>
+                Buscamos seguir sumando contenido a este blog, por eso estaremos recibiendo sus mensajes con recomendaciones y contenido para agregar a la página. 
+                Próximamente abriremos las categorías bookstagramers y novelas/cuentos independientes. <br /> 
+                En el siguiente formulario pueden enviarnos sus historias para que puedan ser publicadas, recomendaciones de 
+                bookstagramers, sus librerias favoritas y/o sugerencias para hacer crecer nuestro contenido.  
+                <br/>Gracias por acompañarnos!🥰<br/>-Equipo de Bookworm
+            </p>
+        </section>
+        <section id="contact">
+            <div class="col">
+                <h2 class="title-contact">Contáctanos</h2>
+                <div class="div-form">
+                    <form action="" id="contactForm" onsubmit="createElement(event);">
+                        <div>
+                            <input class="input" type="text" name="asunto" id="asunto" placeholder="asunto">
+                            <div id="errorAsunto" class="error"></div>
+                        </div>
+                        <div>
+                            <input class="input" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
+                            <div id="errorNombre" class="error"></div>
+                        </div>
+                        <div>
+                            <input class="input" type="email" name="email" placeholder="email">
+                            <div id="errorEmail" class="error"></div>
+                        </div>
+                        <div>
+                            <textarea class="input" name="mensaje" id="mensaje" cols="50" rows="15" placeholder="Escriba su mensaje referido al asunto"></textarea>
+                            <div id="errorMensaje" class="error"></div>
+                        </div>
+                        <button class="btn" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
