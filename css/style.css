@@ -142,38 +142,6 @@ body{
     color: #d487ce;
 }
 
-#contact{
-    background-color: #FFF;
-}
-
-#contact .col{
-    width: 50%;
-    float: left;
-    text-align: center;
-    padding: 30px 20px;
-}
-
-.input{
-    border: 2px solid #ffb769;
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px 20px;
-    margin: 10px 20px;
-}
-
-.input:focus{
-    outline: none;
-}
-
-.btn{
-    border-radius: 15px;
-    padding: 10px 20px;
-    background-color: #EB9B3F;
-    color: #FFF;
-    border-color: #f59a07;
-}
-
-
 
 footer{
     height: 40px; 

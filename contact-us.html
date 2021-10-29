@@ -24,7 +24,7 @@
                 <li><a href="home.html">Inicio</a></li>
                 <li><a href="novedades.html">Novedades literarias</a></li>
                 <li><a href="top-librerias.html">Top librerias</a></li>
-                <li><a href="contact-us.html">Contactanos</a></li>
+                <li><a href="contact-us.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -41,30 +41,29 @@
         </section>
         <section id="contact">
             <div class="col">
-                <h2 class="title-contact">Contáctanos</h2>
+                <h2 class="title-contact">Contactanos</h2>
                 <div class="div-form">
-                    <form action="" id="contactForm" onsubmit="createElement(event);">
+                    <form action="" id='contactForm'>
                         <div>
                             <input class="input" type="text" name="asunto" id="asunto" placeholder="asunto">
-                            <div id="errorAsunto" class="error"></div>
                         </div>
                         <div>
                             <input class="input" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre">
-                            <div id="errorNombre" class="error"></div>
                         </div>
                         <div>
-                            <input class="input" type="email" name="email" placeholder="email">
-                            <div id="errorEmail" class="error"></div>
+                            <input class="input" type="text" name="email" placeholder="ingrese su email">
+                            
                         </div>
                         <div>
-                            <textarea class="input" name="mensaje" id="mensaje" cols="50" rows="15" placeholder="Escriba su mensaje referido al asunto"></textarea>
-                            <div id="errorMensaje" class="error"></div>
+                            <textarea class="input" name="mensaje" id="mensaje" cols="50" rows="10" placeholder="Escriba su mensaje referido al asunto"></textarea>
                         </div>
-                        <button class="btn" type="submit">Enviar</button>
+                        <button class="btn"  type="submit">Enviar</button>
                     </form>
+                    <div id="error" class="error"></div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="./js/contact.js"></script>
 </body>
 </html>
